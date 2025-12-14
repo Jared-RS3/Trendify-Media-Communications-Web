@@ -1,0 +1,22 @@
+.starry-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  background: transparent;
+}
+
+.starry-bg::before {
+  content: '';
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background:
+    radial-gradient(white 1px, transparent 1px) 0 0,
+    radial-gradient(white 1px, transparent 1px) 25px 25px;
+  background-size: 50px 50px;
+  opacity: 0.15;
+}
