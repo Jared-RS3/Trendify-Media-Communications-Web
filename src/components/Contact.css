@@ -318,54 +318,11 @@ act {
   font-size: 1.2rem;
 }
 
-.footer {
-  background: linear-gradient(180deg, transparent 0%, #050505 100%);
-  padding: 60px 5% 40px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.footer-content {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.footer-brand h3 {
-  margin: 0;
-  font-size: 2rem;
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--accent-color)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.footer-brand p {
-  margin: 0;
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.footer-text {
-  text-align: right;
-}
-
-.footer-text p {
-  margin: 5px 0;
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-}
-
 @media (max-width: 1024px) {
+  .contact {
+    padding: 80px 5%;
+  }
+
   .contact-content {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -382,6 +339,14 @@ act {
 }
 
 @media (max-width: 768px) {
+  .contact {
+    padding: 60px 4%;
+  }
+
+  .contact-header h2 {
+    font-size: 2rem;
+  }
+
   .info-card,
   .contact-form-wrapper {
     padding: 30px 20px;
@@ -391,12 +356,32 @@ act {
     gap: 25px;
   }
 
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
+  .contact-item {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 50px 3%;
   }
 
-  .footer-text {
-    text-align: center;
+  .contact-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .contact-intro {
+    font-size: 1rem;
+  }
+
+  .info-card h3,
+  .contact-form-wrapper h3 {
+    font-size: 1.5rem;
+  }
+
+  .submit-btn {
+    padding: 14px 28px;
+    font-size: 0.95rem;
   }
 }

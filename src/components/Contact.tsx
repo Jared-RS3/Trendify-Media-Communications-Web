@@ -229,25 +229,6 @@ const Contact: React.FC = () => {
           </motion.div>
         </div>
       </div>
-
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-brand">
-            <h3>Trendify</h3>
-            <p>Media Communications</p>
-          </div>
-          <div className="footer-text">
-            <p>
-              &copy; 2025 Trendify Media Communications (Pty) Ltd. All rights
-              reserved.
-            </p>
-            <p>
-              Cape Town's pioneering black-owned PR, media, and brand
-              communications agency.
-            </p>
-          </div>
-        </div>
-      </footer>
     </section>
   );
 };

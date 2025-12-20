@@ -2,6 +2,7 @@ import "./App.css";
 import About from "./components/About";
 import CaseStudies from "./components/CaseStudies";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import InteractiveWords from "./components/InteractiveWords";
 import Navbar from "./components/Navbar";
@@ -19,6 +20,7 @@ function App() {
       <Services />
       <CaseStudies />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -22,7 +22,7 @@ const CaseStudies: React.FC = () => {
         "Demonstrated strategic execution under high-pressure conditions",
       ],
       role: "Led influencer strategy, curated content creators, and navigated online sentiment challenges to deliver high-impact results.",
-      icon: "📈",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Pepsi_logo_2014.svg/2560px-Pepsi_logo_2014.svg.png",
       color: "#C9A55A",
       stats: [
         { label: "Earned Media", value: "R6M" },
@@ -42,7 +42,7 @@ const CaseStudies: React.FC = () => {
         "Exceeded PR targets threefold",
       ],
       role: "Oversaw earned media strategy, coordinated media relations, and managed brand-aligned storytelling across all platforms.",
-      icon: "👥",
+      logo: "/Aveeno.jpg",
       color: "#D4AF37",
       stats: [
         { label: "Media Attendees", value: "18" },
@@ -91,10 +91,19 @@ const CaseStudies: React.FC = () => {
                   <div
                     className="case-study-icon"
                     style={{
-                      background: `linear-gradient(135deg, ${study.color}, ${study.color}dd)`,
+                      background: `linear-gradient(135deg, ${study.color}22, ${study.color}11)`,
+                      padding: "20px",
                     }}
                   >
-                    <span style={{ fontSize: "2.5rem" }}>{study.icon}</span>
+                    <img
+                      src={study.logo}
+                      alt={`${study.title} logo`}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "contain",
+                      }}
+                    />
                   </div>
                   <div className="case-study-title">
                     <h3>{study.title}</h3>

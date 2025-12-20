@@ -10,12 +10,11 @@
 }
 
 .starry-bg::before {
-  content: '';
+  content: "";
   display: block;
   width: 100vw;
   height: 100vh;
-  background:
-    radial-gradient(white 1px, transparent 1px) 0 0,
+  background: radial-gradient(white 1px, transparent 1px) 0 0,
     radial-gradient(white 1px, transparent 1px) 25px 25px;
   background-size: 50px 50px;
   opacity: 0.15;
