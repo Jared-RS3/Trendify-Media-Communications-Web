@@ -119,13 +119,13 @@ export default function Footer() {
               reserved. Crafted with passion and purpose. ✨
             </p>
             <div className="footer-legal">
-              <a href="#" className="legal-link">
+              <a href="/privacy-policy" className="legal-link">
                 Privacy Policy
               </a>
-              <a href="#" className="legal-link">
+              <a href="/terms-of-service" className="legal-link">
                 Terms of Service
               </a>
-              <a href="#" className="legal-link">
+              <a href="/cookie-policy" className="legal-link">
                 Cookie Policy
               </a>
             </div>
