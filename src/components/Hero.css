@@ -621,4 +621,37 @@
     width: 100%;
     justify-content: center;
   }
+
+  .visual-card {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .visual-card {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .visual-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .visual-card p {
+    font-size: 0.85rem;
+  }
 }

@@ -1,13 +1,24 @@
+import React from "react";
+import {
+  FaEnvelope,
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaMapMarkerAlt,
+  FaPhone,
+  FaTwitter,
+} from "react-icons/fa";
+import { IconType } from "react-icons";
 import "./Footer.css";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const socialLinks = [
-    { icon: "📘", href: "#", label: "Facebook" },
-    { icon: "📸", href: "#", label: "Instagram" },
-    { icon: "🐦", href: "#", label: "Twitter" },
-    { icon: "💼", href: "#", label: "LinkedIn" },
+  const socialLinks: Array<{ Icon: IconType; href: string; label: string }> = [
+    { Icon: FaFacebook, href: "https://facebook.com", label: "Facebook" },
+    { Icon: FaInstagram, href: "https://instagram.com", label: "Instagram" },
+    { Icon: FaTwitter, href: "https://twitter.com", label: "Twitter" },
+    { Icon: FaLinkedin, href: "https://linkedin.com", label: "LinkedIn" },
   ];
 
   const footerLinks = {
@@ -46,15 +57,21 @@ export default function Footer() {
             </p>
             <div className="footer-contact">
               <div className="contact-item">
-                <span className="contact-icon">📍</span>
+                <span className="contact-icon">
+                  {React.createElement(FaMapMarkerAlt as any, { size: 16 })}
+                </span>
                 <span>Johannesburg & Cape Town, South Africa</span>
               </div>
               <div className="contact-item">
-                <span className="contact-icon">📞</span>
+                <span className="contact-icon">
+                  {React.createElement(FaPhone as any, { size: 16 })}
+                </span>
                 <span>+27 (011) 123-4567</span>
               </div>
               <div className="contact-item">
-                <span className="contact-icon">✉️</span>
+                <span className="contact-icon">
+                  {React.createElement(FaEnvelope as any, { size: 16 })}
+                </span>
                 <span>hello@trendifymedia.co.za</span>
               </div>
             </div>
@@ -63,10 +80,12 @@ export default function Footer() {
                 <a
                   key={index}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={social.label}
                   className="social-link"
                 >
-                  <span>{social.icon}</span>
+                  {React.createElement(social.Icon as any, { size: 20 })}
                 </a>
               ))}
             </div>
