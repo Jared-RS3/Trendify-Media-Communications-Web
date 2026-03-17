@@ -3,6 +3,8 @@ import React from "react";
 import "./About.css";
 
 const About: React.FC = () => {
+  const pepsiLogoUrl = "/pepsi-logo.svg";
+
   const brands = [
     "Takealot.com",
     "Mr D Food",
@@ -35,7 +37,7 @@ const About: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="stat-card">
+          {/* <div className="stat-card">
             <h3>R6M+</h3>
             <p>Earned Media Value</p>
           </div>
@@ -46,7 +48,7 @@ const About: React.FC = () => {
           <div className="stat-card">
             <h3>3x</h3>
             <p>Target Exceeded</p>
-          </div>
+          </div> */}
         </motion.div>
 
         <div className="about-content">
@@ -86,7 +88,7 @@ const About: React.FC = () => {
                 <p className="founder-bio">
                   A seasoned marketing and communications specialist with deep
                   passion for public relations. With extensive experience across
-                  diverse industries, I bring proven expertise, strategic
+                  diverse industries, we bring proven expertise, strategic
                   insight, and hands-on execution to help brands grow
                   authentically and effectively.
                 </p>
@@ -103,7 +105,19 @@ const About: React.FC = () => {
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 }}
                       >
-                        {brand}
+                        {brand === "Pepsi" ? (
+                          <>
+                            <img
+                              src={pepsiLogoUrl}
+                              className="brand-logo-pepsi"
+                              alt="Pepsi logo"
+                              loading="lazy"
+                            />
+                            <span>{brand}</span>
+                          </>
+                        ) : (
+                          brand
+                        )}
                       </motion.span>
                     ))}
                   </div>

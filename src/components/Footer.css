@@ -113,6 +113,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #d4af37;
   background: linear-gradient(
     135deg,
     rgba(201, 165, 90, 0.15),
@@ -127,6 +128,7 @@
 }
 
 .social-link:hover {
+  color: #1a1410;
   background: linear-gradient(135deg, #c9a55a, #d4af37);
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(201, 165, 90, 0.4);

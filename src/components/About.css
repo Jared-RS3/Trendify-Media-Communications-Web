@@ -312,6 +312,16 @@
   color: var(--text-medium);
   transition: all 0.3s ease;
   font-family: "Inter", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-logo-pepsi {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .brand-tag:hover {

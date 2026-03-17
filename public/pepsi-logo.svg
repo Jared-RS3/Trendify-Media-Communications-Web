@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Pepsi logo style mark</title>
+  <desc id="desc">Circular red, white, and blue wave mark representing Pepsi branding.</desc>
+  <defs>
+    <clipPath id="clip">
+      <circle cx="256" cy="256" r="240" />
+    </clipPath>
+    <linearGradient id="whiteWave" x1="48" y1="210" x2="464" y2="290" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FDFDFD" />
+      <stop offset="1" stop-color="#FFFFFF" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="256" cy="256" r="240" fill="#E32934" />
+
+  <g clip-path="url(#clip)">
+    <ellipse cx="276" cy="320" rx="330" ry="220" fill="#004B93" />
+    <path d="M-40 258C35 210 122 184 216 184C321 184 402 214 552 286V344H-40V258Z" fill="url(#whiteWave)" />
+  </g>
+
+  <circle cx="256" cy="256" r="240" stroke="#F5F5F5" stroke-width="8" />
+</svg>

@@ -1,14 +1,14 @@
 import React from "react";
+import { IconType } from "react-icons";
 import {
   FaEnvelope,
   FaFacebook,
-  FaInstagram,
   FaLinkedin,
   FaMapMarkerAlt,
   FaPhone,
   FaTwitter,
 } from "react-icons/fa";
-import { IconType } from "react-icons";
+import { FaInstagram } from "react-icons/fa6";
 import "./Footer.css";
 
 export default function Footer() {

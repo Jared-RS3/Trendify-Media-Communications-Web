@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({
       ...formData,
@@ -105,7 +105,7 @@ const Contact: React.FC = () => {
                 <p>Trendify Media Communications (Pty) Ltd</p>
                 <p className="reg-number">Reg: 2025/535739/07</p>
                 <p className="address">
-                  No. 20, Zone 16, Langa
+                  Cape Town
                   <br />
                   Western Cape, 7750
                 </p>

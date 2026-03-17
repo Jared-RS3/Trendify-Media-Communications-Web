@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          <motion.div
+          {/* <motion.div
             className="hero-badge"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
           >
             <span className="badge-dot"></span>
             Cape Town's Premier Black-Owned PR Agency
-          </motion.div>
+          </motion.div> */}
 
           <h1 className="hero-title">
             Brands that
